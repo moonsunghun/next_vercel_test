@@ -93,7 +93,6 @@ const ModalNewTask = ({ isOpen, onClose }: Props) => {
           <select
             className={selectStyles}
             value={status}
-            onChange={(e) => setStatus(Status[e.target.value as keyof typeof Status])}
             onChange={(e) => setStatus(e.target.value as Status)}
           >
             <option value="">Select Status</option>
